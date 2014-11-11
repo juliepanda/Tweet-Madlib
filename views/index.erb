@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tweetee@nyu</title>
+	<link rel="stylesheet" type="text/css" href="tweetee.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="character-count.js"></script>
+</head>
+<body>
+
+		<form action="/tweet" method="post">
+			<textarea name="tweet" placeholder="put your tweet here!"></textarea><br>
+			<input type="submit" value="TWEET IT!!!!!"><span class="char-count">0</span>
+		</form>
+
+	<% if @tweets %>
+	<% @tweets.each do |tweet| %>
+	<p><%= tweet %></p>
+	<% end %>
+<% end %>
+</body>
+</html>
