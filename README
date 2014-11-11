@@ -1,0 +1,1 @@
+The idea is to create a webapp that tweets to Twitter after running the tweet through a translator. The translator uses the Big Huge Thesaurus API to find a random synonym to each word (other than prepositions) and replaces it. The result should be a readable tweet that sounds really awk.
